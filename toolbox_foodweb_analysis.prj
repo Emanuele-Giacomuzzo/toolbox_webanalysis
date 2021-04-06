@@ -1,19 +1,19 @@
 <deployment-project plugin="plugin.toolbox" plugin-version="1.0">
-  <configuration file="/Users/ema/github/toolbox_food_webs/toolbox_web_analysis.prj" location="/Users/ema/github/toolbox_food_webs" name="toolbox_web_analysis" target="target.toolbox" target-name="Package Toolbox">
-    <param.appname>Food Web Analysis</param.appname>
+  <configuration file="/Users/ema/github/toolbox_foodweb_analysis/toolbox_foodweb_analysis.prj" location="/Users/ema/github/toolbox_foodweb_analysis" name="toolbox_foodweb_analysis" target="target.toolbox" target-name="Package Toolbox">
+    <param.appname>Food Web Analysis Toolbox</param.appname>
     <param.authnamewatermark>Emanuele Giacomuzzo</param.authnamewatermark>
     <param.email>emanuelegiacomuzzo@gmail.com</param.email>
     <param.company>Central European University, Budapest</param.company>
-    <param.summary />
-    <param.description>Put here your preprint.</param.description>
+    <param.summary>Useful for manipulating food webs.</param.summary>
+    <param.description />
     <param.screenshot />
     <param.version>1.0</param.version>
-    <param.output>${PROJECT_ROOT}/Food Web Analysis.mltbx</param.output>
+    <param.output>${PROJECT_ROOT}/Food Web Analysis Toolbox.mltbx</param.output>
     <param.products.name />
     <param.products.id />
     <param.products.version />
     <param.platforms />
-    <param.guid>cbf8a160-59d6-4f26-b967-eaff6d245ac0</param.guid>
+    <param.guid>30255a89-0776-4df8-a716-3399f71cb7ce</param.guid>
     <param.exclude.filters />
     <param.exclude.pcodedmfiles>true</param.exclude.pcodedmfiles>
     <param.examples />
@@ -25,11 +25,7 @@
     <param.matlabpath.excludes />
     <param.javaclasspath.excludes />
     <param.exported.on.package>false</param.exported.on.package>
-    <param.required.addons>
-      <requiredaddons>
-        <requiredAddOn downloadURL="https://uk.mathworks.com/matlabcentral/fileexchange/89837-keystone-species-toolbox" earliest="earliest" fromRepository="false" id="1fb07294-698a-4c36-8f3f-936e7e62fd55" include="true" latest="latest">keystone_tools</requiredAddOn>
-      </requiredaddons>
-    </param.required.addons>
+    <param.required.addons />
     <param.matlab.project.id />
     <param.matlab.project.name />
     <param.release.start />
@@ -49,7 +45,7 @@
       <param.authnamewatermark />
       <param.email />
       <param.company />
-      <param.summary />
+      <param.description />
       <param.screenshot />
       <param.version />
       <param.output />
@@ -68,6 +64,7 @@
       <param.matlabpath.excludes />
       <param.javaclasspath.excludes />
       <param.exported.on.package />
+      <param.required.addons />
       <param.matlab.project.id />
       <param.matlab.project.name />
       <param.release.start />
@@ -88,7 +85,7 @@
       <file>${PROJECT_ROOT}</file>
     </fileset.rootdir>
     <fileset.rootfiles>
-      <file>${PROJECT_ROOT}/.DS_Store</file>
+      <file>${PROJECT_ROOT}/.git</file>
       <file>${PROJECT_ROOT}/README.md</file>
       <file>${PROJECT_ROOT}/addFrontZeros.m</file>
       <file>${PROJECT_ROOT}/calculateOutStrengthAndTP.m</file>
@@ -101,11 +98,15 @@
       <file>${PROJECT_ROOT}/writeEdgeList.m</file>
       <file>${PROJECT_ROOT}/writeEdgelistTP.m</file>
     </fileset.rootfiles>
-    <fileset.depfun.included />
+    <fileset.depfun.included>
+      <file>/Users/ema/github/toolbox_keystones/calculateTP.m</file>
+      <file>/Users/ema/github/toolbox_keystones/trophic_position/computeIntakeRatioMatrix.m</file>
+      <file>/Users/ema/github/toolbox_keystones/trophic_position/deleteAutotrophs.m</file>
+    </fileset.depfun.included>
     <fileset.depfun.excluded />
     <fileset.package />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}" name="Food Web Analysis.mltbx" optional="false">/Users/ema/github/toolbox_food_webs/Food Web Analysis.mltbx</file>
+      <file location="${PROJECT_ROOT}" name="Food Web Analysis Toolbox.mltbx" optional="false">/Users/ema/github/toolbox_foodweb_analysis/Food Web Analysis Toolbox.mltbx</file>
     </build-deliverables>
     <workflow />
     <matlab>
