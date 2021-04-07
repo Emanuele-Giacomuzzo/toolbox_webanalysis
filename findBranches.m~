@@ -1,4 +1,5 @@
-function [branches] = findBranches(A,similarity,rege_similarity)
+function branches = findBranches(A, similarity, rege_similarity)
+%Thi
 
 A = tounweighted(A);
 

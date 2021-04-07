@@ -1,11 +1,8 @@
 function WDC = calculateWDC(A)
 %It calculates the weighted degree centrality of the nodes inside the food web.
-
-%---INPUT---
+%
 %A = adjacency matrix of the directed graph. The rows should be the preys
 %and the columns should be the predators.
-
-%---OUTPUT---
 %WDC = vector containing the weighted degree centrality of the species inside
 %the food web. 
 

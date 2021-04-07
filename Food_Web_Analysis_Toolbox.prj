@@ -1,10 +1,10 @@
 <deployment-project plugin="plugin.toolbox" plugin-version="1.0">
-  <configuration file="/Users/ema/github/toolbox_foodweb_analysis/toolbox_foodweb_analysis.prj" location="/Users/ema/github/toolbox_foodweb_analysis" name="toolbox_foodweb_analysis" target="target.toolbox" target-name="Package Toolbox">
+  <configuration file="/Users/ema/github/toolbox_webanalysis/Food_Web_Analysis_Toolbox.prj" location="/Users/ema/github/toolbox_webanalysis" name="Food_Web_Analysis_Toolbox" target="target.toolbox" target-name="Package Toolbox">
     <param.appname>Food Web Analysis Toolbox</param.appname>
     <param.authnamewatermark>Emanuele Giacomuzzo</param.authnamewatermark>
     <param.email>emanuelegiacomuzzo@gmail.com</param.email>
     <param.company>Central European University, Budapest</param.company>
-    <param.summary>Useful for manipulating food webs.</param.summary>
+    <param.summary />
     <param.description />
     <param.screenshot />
     <param.version>1.0</param.version>
@@ -13,7 +13,7 @@
     <param.products.id />
     <param.products.version />
     <param.platforms />
-    <param.guid>30255a89-0776-4df8-a716-3399f71cb7ce</param.guid>
+    <param.guid>fe13b5b3-a039-4a83-a5dd-41021097ad97</param.guid>
     <param.exclude.filters />
     <param.exclude.pcodedmfiles>true</param.exclude.pcodedmfiles>
     <param.examples />
@@ -45,6 +45,7 @@
       <param.authnamewatermark />
       <param.email />
       <param.company />
+      <param.summary />
       <param.description />
       <param.screenshot />
       <param.version />
@@ -85,28 +86,39 @@
       <file>${PROJECT_ROOT}</file>
     </fileset.rootdir>
     <fileset.rootfiles>
+      <file>${PROJECT_ROOT}/.DS_Store</file>
       <file>${PROJECT_ROOT}/.git</file>
       <file>${PROJECT_ROOT}/README.md</file>
-      <file>${PROJECT_ROOT}/addFrontZeros.m</file>
-      <file>${PROJECT_ROOT}/calculateOutStrengthAndTP.m</file>
+      <file>${PROJECT_ROOT}/buildBinaryNetwork.m</file>
+      <file>${PROJECT_ROOT}/buildWeightedNetwork.m</file>
+      <file>${PROJECT_ROOT}/calculateKeystone.m</file>
+      <file>${PROJECT_ROOT}/calculateSTO.m</file>
+      <file>${PROJECT_ROOT}/calculateStatus.m</file>
+      <file>${PROJECT_ROOT}/calculateTI.m</file>
+      <file>${PROJECT_ROOT}/calculateTP.m</file>
+      <file>${PROJECT_ROOT}/calculateWDC.m</file>
       <file>${PROJECT_ROOT}/createDAG.m</file>
-      <file>${PROJECT_ROOT}/deleteCycle.m</file>
-      <file>${PROJECT_ROOT}/findCycles.m</file>
+      <file>${PROJECT_ROOT}/createDAG_dependencies</file>
+      <file>${PROJECT_ROOT}/findBranches.m</file>
+      <file>${PROJECT_ROOT}/findBranches_dependencies</file>
+      <file>${PROJECT_ROOT}/findRealisedLinkRatio.m</file>
+      <file>${PROJECT_ROOT}/findRealisedLinkRatio_dependencies</file>
+      <file>${PROJECT_ROOT}/keystone_indices_dependencies</file>
+      <file>${PROJECT_ROOT}/topological_importance_dependencies</file>
       <file>${PROJECT_ROOT}/toundirected.m</file>
       <file>${PROJECT_ROOT}/tounweighted.m</file>
+      <file>${PROJECT_ROOT}/transformAToBinaryEdgelist.m</file>
       <file>${PROJECT_ROOT}/transformEdgelistToA.m</file>
-      <file>${PROJECT_ROOT}/writeEdgeList.m</file>
-      <file>${PROJECT_ROOT}/writeEdgelistTP.m</file>
+      <file>${PROJECT_ROOT}/transformRegeMatrix.m</file>
+      <file>${PROJECT_ROOT}/trophic_overlap_dependencies</file>
+      <file>${PROJECT_ROOT}/trophic_position_dependencies</file>
+      <file>${PROJECT_ROOT}/writeIgraphEdgelist.m</file>
     </fileset.rootfiles>
-    <fileset.depfun.included>
-      <file>/Users/ema/github/toolbox_keystones/calculateTP.m</file>
-      <file>/Users/ema/github/toolbox_keystones/trophic_position/computeIntakeRatioMatrix.m</file>
-      <file>/Users/ema/github/toolbox_keystones/trophic_position/deleteAutotrophs.m</file>
-    </fileset.depfun.included>
+    <fileset.depfun.included />
     <fileset.depfun.excluded />
     <fileset.package />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}" name="Food Web Analysis Toolbox.mltbx" optional="false">/Users/ema/github/toolbox_foodweb_analysis/Food Web Analysis Toolbox.mltbx</file>
+      <file location="${PROJECT_ROOT}" name="Food Web Analysis Toolbox.mltbx" optional="false">/Users/ema/github/toolbox_webanalysis/Food Web Analysis Toolbox.mltbx</file>
     </build-deliverables>
     <workflow />
     <matlab>

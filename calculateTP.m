@@ -1,15 +1,13 @@
 function TP = calculateTP(A)
+%
 %It calculates the trophic position (TP) as described in
 %Levine, S. (1980). Several measures of trophic structure applicable to complex food webs. Journal of Theoretical Biology, 83(2), 195-207.
-
+%
 %This function was originally coded by Wei-Chung Liu in R and then
 %implemented in MATLAB by Emanuele Giacomuzzo.
-
-%---INPUT---
+%
 %A = adjacency matrix of the directed graph. The rows should be the preys
 %and the columns should be the predators.
-
-%---OUTPUT---
 %TP = vector containing the trophic position of the species inside
 %the food web. 
 

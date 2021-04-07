@@ -1,8 +1,8 @@
 function DAG = createDAG(A)
-
-%if the network had problems with the TP,  then we need to eliminate cycles
-%until the network gives us a good answer. At that point we need to
-%calculate TP and that's going to be our ultimate TP.
+%
+%It creates a dicrected acyclic graph from one with simple cycles. 
+%A = adjacency maxtrix of the directed graph. 
+%DAG = adjacency matrix of the DAG.
 
 A = A - diag(diag(A));
 TP = calculateTP(A);

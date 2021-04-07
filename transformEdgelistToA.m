@@ -1,11 +1,8 @@
 function A = transformEdgelistToA(edgelist)
 %It reads an edgelist and transforms into an adjacency matrix.
-
-%---INPUT---
+%
 %edgelist = the edegelist. The first column should be the prey, the second
-%should be the predator and the third the interaction strength. 
-
-%---OUTPUT---
+%should be the predator and the third the interaction strength.
 %A = the adjacency matrix. 
 
 edgelist = strrep(edgelist,",",".");

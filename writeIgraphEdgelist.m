@@ -1,6 +1,7 @@
-function [igraph_edgelist] = writeIgraphEdgelist(A)
-%It is specifically useful to create a edge list that can be used in
-%igraph in R.
+function igraph_edgelist = writeIgraphEdgelist(A)
+%It writes an edgelist tha can be used in igraph in R.
+%
+%A = adjacency matrix of the food web.
 
 igraph_edgelist=double.empty;
 for node_from=1:length(A)

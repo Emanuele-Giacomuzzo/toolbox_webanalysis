@@ -1,6 +1,7 @@
 function A_undirected = toundirected(A)
 %It transforms the adjacecny matrix of a directed graph into the adjacency
 %matrix of an undirected one. 
+%A = adjacency matrix of the food web. 
 
 if issymmetric(A) == 0
     

@@ -1,8 +1,8 @@
 function STO = topologicalOverlap(A, nr_of_steps, min_threshold, max_threshold, learning_rate, weight)
+%
 %It calculates the species uniqueness as described in 
 %Lai, S. M., Liu, W. C., & Jordán, F. (2015). A trophic overlap-based measure for species uniqueness in ecological networks. Ecological Modelling, 299, 95-101.
-
-%---INPUT---
+%
 %A = adjacency matrix of the directed graph. The rows should be the preys
 %and the columns should be the predators.
 %nr_of_steps = nr of steps to be considered for the spread of the effect.
@@ -18,10 +18,8 @@ function STO = topologicalOverlap(A, nr_of_steps, min_threshold, max_threshold, 
 %weight = whether you want to consider interaction strength or not. By
 %default the function considers it. If you do not want to consider it you
 %need to input "binary". 
-
-%---OUTPUT---
 %STO = vector containing the species uniqueness (STO) of the species in the
-%food web. 
+%food web.
 
 if weight == "binary"
     A(A > 0) = 1;
