@@ -1,21 +1,22 @@
-function [undirected_network] = toundirected(A)
-%It preserves the self-loops.
+function A_undirected = toundirected(A)
+%It transforms the adjacecny matrix of a directed graph into the adjacency
+%matrix of an undirected one. 
 
 if issymmetric(A) == 0
     
-    undirected_network = zeros(length(A));
+    A_undirected = zeros(length(A));
     for node_from = 1:length(A)
         for node_to = 1:length(A)
             if A(node_from,node_to) ~= 0
-                undirected_network(node_from,node_to) = A(node_from,node_to);
-                undirected_network(node_to,node_from) = A(node_from,node_to);
+                A_undirected(node_from,node_to) = A(node_from,node_to);
+                A_undirected(node_to,node_from) = A(node_from,node_to);
             end
         end
     end
     
 else
     
-    undirected_network=A;
+    A_undirected = A;
 
 end
 
