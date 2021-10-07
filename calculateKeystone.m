@@ -1,6 +1,6 @@
 function[k, kbu, ktd, kdir, kindir] = calculateKeystone(A)
 %
-%It calculates the keystone indices described in 
+%It calculates the keystone indices described in
 %Jordán, F., Takács-Sánta, A., & Molnár, I. (1999). A reliability theoretical quest for keystones. Oikos, 453-462.
 %
 %The results of this code have been tested against the software Graph by
@@ -20,13 +20,13 @@ function[k, kbu, ktd, kdir, kindir] = calculateKeystone(A)
 A(A > 0) = 1; %binary
 A = createDAG(A);
 
-preys = sum(A); 
+preys = sum(A);
 preys = preys.';
 predators = sum(A,2);
 
 prey_coefficients = preyCoefficients(A,preys,length(A));
 vw = sum(prey_coefficients,2)*-1;
-diagonal = diag(ones(length(A),1)*-1); 
+diagonal = diag(ones(length(A),1)*-1);
 prey_coefficients_updated = prey_coefficients+diagonal;
 kbu = linsolve(prey_coefficients_updated,vw);
 

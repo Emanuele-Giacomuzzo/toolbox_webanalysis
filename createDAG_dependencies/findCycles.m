@@ -1,5 +1,5 @@
 function pathCell = findCycles(A)
-%https://uk.mathworks.com/matlabcentral/answers/515624-finding-cycles-in-directed-graph
+%See https://uk.mathworks.com/matlabcentral/answers/515624-finding-cycles-in-directed-graph
 G = sparse(A);
 numNodes = size(G,1); 
 pathCell = {};
